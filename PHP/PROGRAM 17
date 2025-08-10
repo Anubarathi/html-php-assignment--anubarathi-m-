@@ -1,0 +1,16 @@
+<?php
+$balance = 1000;
+$transaction = "withdraw";
+$amount = 200;
+
+if ($transaction == "deposit") {
+  $balance += $amount;
+} elseif ($transaction == "withdraw") {
+  if ($amount <= $balance) {
+    $balance -= $amount;
+  } else {
+    echo "Insufficient Balance";
+  }
+}
+echo "Current Balance: $balance";
+?>
