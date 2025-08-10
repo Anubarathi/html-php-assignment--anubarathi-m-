@@ -1,85 +1,79 @@
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Anubarathi Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f5fa;
-    }
-    header, footer {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    section {
-      padding: 25px 40px;
-    }
-    h2 {
-      color: #3a0ca3;
-      margin-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li, p {
-      color: #444;
-      margin-bottom: 8px;
-    }
-    a {
-      color: #3a0ca3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .link-box {
-      background: #eee;
-      padding: 8px;
-      margin-top: 6px;
-      border-radius: 4px;
-    }
-  </style>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header, footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav {
+            background-color: #6a0dad;
+            text-align: center;
+        }
+        nav a, .links a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover, .links a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 15px;
+        }
+        .project {
+            background: #f9f5fc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Hello! I'm Anubarathi</h1>
-    <p>Welcome to my portfolio</p>
-  </header>
+<header>
+    <h1>Anu's Portfolio</h1>
+    <p>Showcasing My Work</p>
+    <div class="links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+</header>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>I'm a B.Sc. CS student at PSGR Krishnammal. Here’s a quick glimpse of what I do and build.</p>
-  </section>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>E-Commerce DBMS Project</li>
-      <li>Flutter Bookstore App</li>
-    </ul>
-  </section>
-
-  <section>
+<section id="about">
     <h2>About Me</h2>
-    <p>Interested in backend (Java + Oracle) and frontend (HTML + Flutter) development.</p>
-  </section>
+    <p>Hello! I’m Anu, a Computer Science student passionate about software development. 
+       I enjoy building projects like mobile apps, websites, and database systems. 
+       Currently exploring Flutter, Java, and SQL while sharpening my coding skills.</p>
+</section>
 
-  <section>
-    <h2>Contact</h2>
-    <div class="link-box">
-      LinkedIn: <a href="https://www.linkedin.com/in/anubarathi" target="_blank">linkedin.com/in/anubarathi</a>
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Flutter - Bookstore App</h3>
+        <p>A mobile app built with Flutter to browse, purchase, and manage books with a clean UI and smooth navigation.</p>
     </div>
-    <div class="link-box">
-      GitHub: <a href="https://github.com/Anubarathi" target="_blank">github.com/Anubarathi</a>
+    <div class="project">
+        <h3>DBMS - E-commerce Management System</h3>
+        <p>A database-backed system to manage products, orders, and customers efficiently for an online store.</p>
     </div>
-  </section>
+</section>
 
-  <footer>
-    &copy; 2025 Anubarathi
-  </footer>
+<footer>
+    <p>2025 Anu. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
+
