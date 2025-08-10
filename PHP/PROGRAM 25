@@ -1,5 +1,5 @@
 <?php
-$text = "hello anuarathi";
+$text = "hello anubarathi";
 $result = preg_replace('/\bhello\b/i', 'hii', $text, 1);
 echo $result;
 ?>
