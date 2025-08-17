@@ -1,0 +1,20 @@
+<?php
+$file1 = "test.txt";
+$file2 = "test2.txt";
+$outputFile = "output.txt";
+
+// Check if files exist
+if (!file_exists($file1) || !file_exists($file2)) {
+    die("Error: One or both input files are missing!");
+}
+
+$content1 = file_get_contents($file1);
+$content2 = file_get_contents($file2);
+
+// Write contents into output.txt (overwrite each time)
+if (file_put_contents($outputFile, $content1 . PHP_EOL . $content2 . PHP_EOL) !== false) {
+    echo "Files merged successfully into $outputFile";
+} else {
+    echo "Error: Could not write to $outputFile";
+}
+?>
