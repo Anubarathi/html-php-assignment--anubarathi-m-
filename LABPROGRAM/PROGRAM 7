@@ -1,0 +1,12 @@
+<?php
+// Associative Array
+$student = array(
+    "name" => "Anu",
+    "age" => 20,
+    "course" => "Computer Science"
+);
+
+echo "<h3>Associative Array</h3>";
+echo "Name: " . $student["name"] . "<br>";
+echo "Age: " . $student["age"] . "<br>";
+echo "Course: " . $student["course"] . "<br><br>";
