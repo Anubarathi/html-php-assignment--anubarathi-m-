@@ -10,3 +10,19 @@ echo "<h3>Associative Array</h3>";
 echo "Name: " . $student["name"] . "<br>";
 echo "Age: " . $student["age"] . "<br>";
 echo "Course: " . $student["course"] . "<br><br>";
+
+// Multidimensional Array
+$students = array(
+    array("Anu", "CSE", 85),
+    array("Ravi", "IT", 90),
+    array("Meena", "ECE", 88)
+);
+
+echo "<h3>Multidimensional Array</h3>";
+foreach ($students as $student) {
+    echo "Name: " . $student[0] .
+         ", Dept: " . $student[1] .
+         ", Marks: " . $student[2] . "<br>";
+}
+?>
+
