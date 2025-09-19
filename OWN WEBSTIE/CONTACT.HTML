@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background: #fff8e6; font-family: Arial; padding: 20px; }
+    button { background: orange; border: none; padding: 10px 15px; border-radius: 5px; color: white; cursor: pointer; }
+    button:hover { background: darkorange; }
+  </style>
+</head>
+<body>
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+    <label>Message:</label><br>
+    <textarea rows="4" cols="40" required></textarea><br><br>
+    <button type="submit">Send</button>
+  </form>
+  <p id="successMessage" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+     Message sent successfully!
+  </p>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("successMessage").style.display = "block";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
