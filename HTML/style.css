@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8dc;
+  margin: 20px;
+  text-align: center;
+}
+
+.menu {
+  background: #ffe4c4;
+  text-align: left;
+  padding: 15px;
+}
+
+.menu h2 {
+  font-family: Verdana;
+}
+
+.menu a {
+  font-size: 16px;
+  color: darkblue;
+  text-decoration: none;
+}
+
+.header {
+  background: darkorange;
+  color: white;
+  padding: 10px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.btn {
+  background: darkorange;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  font-size: 20px;
+  margin-top: 50px;
+}
